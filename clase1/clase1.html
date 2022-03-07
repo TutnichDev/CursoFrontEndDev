@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      :root {
+        --Very-light-pink: #c7c7c7;
+        --White: #ffffff;
+        --Text-input-field: #f7f7f7;
+        --Black: #000000;
+        --Hospital-green: #acd9b2;
+        --Dark: #232830;
+      }
+      body {
+        margin: 0;
+      }
+      .logo {
+        align-items: center;
+      }
+      .login {
+        width: 100vw;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+      }
+
+      .form-container {
+        width: 30rem;
+        display: grid;
+        grid-template-rows: auto 1fr;
+      }
+
+      .title,
+      .subtitle {
+        text-align: center;
+      }
+
+      .input-password {
+        background-color: var(--Text-input-field);
+        border-radius: 8px;
+        border: none    ;
+      }
+
+      .label {
+        width: 100%;
+      }
+
+      .form {
+        height: 10rem;
+        display: grid;
+        grid-template-rows: auto;
+      }
+
+      .primary-button {
+          background-color: var(--Hospital-green);
+          border-radius: 8px;
+          color: var(--White);
+          border: none;
+      }
+    </style>
+    <div class="login">
+      <div class="form-container">
+        <img src="" alt="Logo" class="logo" />
+
+        <h1 class="title">Create a new password</h1>
+        <p class="subtitle">Enter a new password for yout account</p>
+
+        <form action="" class="form">
+          <label for="password" class="label">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="*********"
+            class="input-password"
+          />
+
+          <label for="new-password" class="label">Re-enter password</label>
+          <input
+            type="password"
+            id="new-password"
+            placeholder="*********"
+            class="input-password"
+          />
+          <input
+            type="submit"
+            value="Confirm"
+            class="primary-button login-button"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

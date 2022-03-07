@@ -1,22 +1,17 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Quicksand', sans-serif;
+ */
+
 html {
   font-size: 62.5%;
 }
 
-.container {
-    
+:root {
+  --Very-light-pink: #C7C7C7;
+  --White: #FFFFFF;
+  --Text-input-field: #F7F7F7;
+  --Black: #000000;
+  --Hospital-green: #ACD9B2;
+  --Dark: #232830;
 }
 
-.container div {
-    background-color: blue;
-    color: yellow;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-}
-
-@media (min-width: 500px) {
-  .container div {
-    background-color: red;
-    color: aliceblue;
-  }
-}
