@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
-    <title>Mail enviado</title>
+    <title>Contraseña y Re-Enter</title>
   </head>
   <body>
     <style>
@@ -32,7 +32,7 @@
       }
       .logo {
         justify-self: center;
-        width: 125px;
+        width: 180px;
         margin-bottom: 48px;
         display: none;
       }
@@ -48,71 +48,77 @@
         width: 30rem;
         display: grid;
         grid-template-rows: auto 1fr;
-        
       }
 
-      
-
-      .icon-container {
-        display: flex;
-        background-color: var(--Text-input-field);        
-        justify-content: center;
-        justify-self: center;
-        border-radius: 100%;
-        width: 100px;
-        height: 100px;
+      .form {
+        display: grid;
+        grid-template-rows: auto;
       }
 
-      .icon-container img {
-        width: 60px;
+      .input-data {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 6px;
+        background-color: var(--Text-input-field);
+        border-radius: 8px;
+        border: none;
+        margin-bottom: 15px;
+        height: 30px;
       }
 
-      .title,
-      .subtitle {
-        text-align: center;
-        font-size: var(--md);
-      }
-
-      .title {
+      .label {
         font-weight: bold;
+        font-size: var(--sm);
+        width: 100%;
+        margin-bottom: 4px;
       }
-
-      .subtitle {
-        margin-top: 0px;
-        
-        color: var(--Very-light-pink);
-        font-weight: 300;
-        margin-bottom: 24px;
-      }
-     
 
       .primary-button {
         font-size: var(--md);
-        padding-top: 0px;
-        margin-top: 24px;
+        margin-top: 15px;
         background-color: var(--Hospital-green);
         border-radius: 8px;
         color: var(--White);
         border: none;
         height: 42px;
+        margin-bottom: 16px;
         cursor: pointer;
-
       }
 
-      .bottom-messege{
-        margin-top: 16px;
+      .bottom-messege {
+        margin-top: 8px;
         justify-self: center;
         font-size: x-small;
       }
 
       .bottom-messege a {
         text-decoration: none;
-        color:var(--Hospital-green)
+        color: var(--Hospital-green);
+      }
+
+      .secondary-button {
+        font-size: var(--md);
+        margin-top: 64px;
+        background-color: var(--White);
+        border-radius: 8px;
+        align-self: baseline;
+        color: var(--Hospital-green);
+        border: 1px solid var(--Hospital-green);
+        font-weight: bold;
+        height: 42px;
+        margin-bottom: 16px;
+        cursor: pointer;
       }
 
       @media (max-width: 640px) {
         .logo {
           display: block;
+        }
+
+        .secondary-button {
+          position: absolute;
+          bottom: 10px;
+          width: 300px;
         }
       }
     </style>
@@ -120,26 +126,38 @@
       <div class="form-container">
         <img src="../logos/logo_yard_sale.svg" alt="Logo" class="logo" />
 
-        <h1 class="title">Email has been sent!</h1>
-        <p class="subtitle">
-          Please check your inbox for instructions on how to reset the password
+        <form action="" class="form">
+          <label for="email" class="label">Email address</label>
+          <input
+            type="text"
+            id="email"
+            placeholder="camilayokoo@gmail.com"
+            class="input-data"
+          />
+
+          <label for="password" class="label">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="*********"
+            class="input-data"
+          />
+          <input
+            type="submit"
+            value="Log in"
+            class="primary-button login-button"
+          />
+        </form>
+
+        <p class="bottom-messege">
+          <a href="http://">Forgot my password</a>
         </p>
-        <div class="icon-container">
-          <img src="../icons/email.svg" alt="Logo de correo"  />
-        </div>
 
         <input
-        type="submit"
-        value="Login"
-        class="primary-button login-button"
-      />
-
-        <p class="bottom-messege"> 
-          <span>
-            Didn't receive the emal? 
-          </span>
-          <a href="http://">Resend</a>
-        </p>
+          type="submit"
+          value="Sing up"
+          class="secondary-button signup-button"
+        />
       </div>
     </div>
   </body>
