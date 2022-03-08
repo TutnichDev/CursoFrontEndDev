@@ -11,11 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
-    <title>Contraseña y Re-Enter</title>
+    <title>Mail enviado</title>
   </head>
   <body>
     <style>
-      :root { 
+      :root {
         --Very-light-pink: #c7c7c7;
         --White: #ffffff;
         --Text-input-field: #f7f7f7;
@@ -36,7 +36,7 @@
         margin-bottom: 48px;
         display: none;
       }
-      .login {
+      .container {
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -45,18 +45,29 @@
       }
 
       .form-container {
-          width: 30rem;
-          display: grid;
-          grid-template-rows: auto 1fr;
-          height: fit-content;
-        }
+        width: 30rem;
+        display: grid;
+        grid-template-rows: auto 1fr;
         
-        .form {
-          display: grid;
-          grid-template-rows: auto;
-        }
+      }
 
-        .title,
+      
+
+      .icon-container {
+        display: flex;
+        background-color: var(--Text-input-field);        
+        justify-content: center;
+        justify-self: center;
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+      }
+
+      .icon-container img {
+        width: 60px;
+      }
+
+      .title,
       .subtitle {
         text-align: center;
         font-size: var(--md);
@@ -67,31 +78,18 @@
       }
 
       .subtitle {
-        padding-bottom: 10px;
+        margin-top: 0px;
+        
         color: var(--Very-light-pink);
-        font-weight:300;
+        font-weight: 300;
+        margin-bottom: 24px;
       }
-      .input-password {
-        padding-top: 6px;
-        padding-left: 6px;
-        background-color: var(--Text-input-field);
-        border-radius: 8px;
-        border: none;
-        margin-bottom: 15px;
-        height: 30px;
-      }
-
-      .label {
-        font-weight: bold;
-        font-size: var(--sm);
-        width: 100%;
-        margin-bottom: 4px;
-      }
-
+     
 
       .primary-button {
         font-size: var(--md);
-        margin-top: 15px;
+        padding-top: 0px;
+        margin-top: 24px;
         background-color: var(--Hospital-green);
         border-radius: 8px;
         color: var(--White);
@@ -99,41 +97,47 @@
         height: 42px;
       }
 
-      @media(max-width:640px) {
-        .logo {
-            display: block;
+      .bottom-messege{
+        margin-top: 16px;
+        justify-self: center;
+        font-size: x-small;
       }
+
+      .bottom-messege a {
+        text-decoration: none;
+        color:var(--Hospital-green)
+      }
+
+      @media (max-width: 640px) {
+        .logo {
+          display: block;
+        }
       }
     </style>
-    <div class="login">
+    <div class="container">
       <div class="form-container">
         <img src="../logos/logo_yard_sale.svg" alt="Logo" class="logo" />
 
-        <h1 class="title">Create a new password</h1>
-        <p class="subtitle">Enter a new password for your account</p>
+        <h1 class="title">Email has been sent!</h1>
+        <p class="subtitle">
+          Please check your inbox for instructions on how to reset the password
+        </p>
+        <div class="icon-container">
+          <img src="../icons/email.svg" alt="Logo de correo"  />
+        </div>
 
-        <form action="" class="form">
-          <label for="password" class="label">Password</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="*********"
-            class="input-password"
-          />
+        <input
+        type="submit"
+        value="Login"
+        class="primary-button login-button"
+      />
 
-          <label for="new-password" class="label">Re-enter password</label>
-          <input
-            type="password"
-            id="new-password"
-            placeholder="*********"
-            class="input-password"
-          />
-          <input
-            type="submit"
-            value="Confirm new Password"
-            class="primary-button login-button"
-          />
-        </form>
+        <p class="bottom-messege"> 
+          <span>
+            Didn't receive the emal? 
+          </span>
+          <a href="http://">Resend</a>
+        </p>
       </div>
     </div>
   </body>
