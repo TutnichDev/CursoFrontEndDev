@@ -12,6 +12,8 @@
       rel="stylesheet"
     />
     <title>Contraseña y Re-Enter</title>
+  </head>
+  <body>
     <style>
       :root {
         --Very-light-pink: #c7c7c7;
@@ -24,437 +26,108 @@
         --md: 1.6rem;
         --lg: 1.8rem;
       }
-
       body {
-        margin: 0px;
+        margin: 0;
         font-family: "Quicksand", sans-serif;
-        width: 90vw;
-        
-        display: contents;
       }
 
-      .main-section {
-        margin: 0px;
+      .container {
+        width: 100vw;
+        height: 100vh;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        place-items: center;
       }
-      .input-field-search {
+
+      .form-container {
+        width: 30rem;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        height: fit-content;
+      }
+
+      .form {
+        display: grid;
+        grid-template-rows: auto;
+      }
+
+      .title {
+        margin-bottom: 32px;
+        text-align: left;
+        font-size: var(--md);
+        font-weight: bold;
+      }
+      .input-field {
         padding-top: 6px;
         padding-bottom: 6px;
         padding-left: 6px;
-        background: var(--Text-input-field) url(../icons/lupa.png) left
-          no-repeat;
+        background-color: var(--Text-input-field);
         border-radius: 8px;
         border: none;
+        margin-bottom: 15px;
         height: 30px;
-        background-size: 14px;
-        background-position-x: 10px;
-        padding-left: 28px;
-        color: var(--Text-input-field);
       }
 
-      .cards-container{
-        margin: 0px;
-        display: grid;
-        grid-template-columns: repeat(auto-fill , 240px);
-        gap: 24px;
-        justify-content: center;
-        width:90vw;
-      }
-
-      .cards {
-        width: 240px;
-      }
-
-      .card-product {
-        width: 240px;
-      }
-
-      .card-product img {
-        width: 240px;
-        height: 240px;
-        object-fit: cover;
-        border-radius: 20px;
-      }
-
-      .card-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .card-info-data p:nth-child(1) {
+      .label {
         font-weight: bold;
-        font-size: var(--md);
-        
-        color: var(--Dark);
-        margin-bottom: 2px;
-        margin-top: 4px;
+        font-size: var(--sm);
+        width: 100%;
+        margin-bottom: 4px;
+        font-weight: bold;
+
       }
 
-      .card-info-data p:nth-child(2) {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-size: var(--md);
+      .value {
+        font-size: var(--sm);
         color: var(--Very-light-pink);
+
+
       }
-      .card-info figure {
-        margin-right: 0;
+
+      .secondary-button {
+        font-size: var(--md);
+        margin-top: 64px;
+        background-color: var(--White);
+        border-radius: 8px;
+        align-self: baseline;
+        color: var(--Hospital-green);
+        border: 1px solid var(--Hospital-green);
+        font-weight: bold;
+        height: 42px;
+        margin-bottom: 16px;
+        cursor: pointer;
+      }
+
+      @media (max-width: 640px) {
+
+
+        .primary-button {
+          position: absolute;
+          bottom: 10px;
+          width: 300px;
       }
     </style>
-  </head>
+    <div class="container">
+      <div class="form-container">
+        <h1 class="title">My account</h1>
 
-  <body>
-    <section class="main-section">
-      <div class="cards-container">
+        <form action="" class="form">
+          <label for="name" class="label">Name</label>
+          <p class="value">Camilo Yokoo</p>
 
+          <label for="email-address" class="label">Email address</label>
+          <p class="value">camilayokoo@yahoo.com.ar</p>
 
-        <div class="cards">
-          <div class="card-product">
-            <img src="../productos/bike.jpeg" alt="producto" />
-          </div>
+          <label for="password" class="label">Password</label>
+          <p class="value">*******</p>
 
-          <div class="card-info">
-            <div class="card-info-data">
-              <p>$ 120</p>
-              <p>Bike</p>
-            </div>
-            <div class="card-info-img">
-              <figure>
-                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="card-product">
-            <img src="../productos/bike.jpeg" alt="producto" />
-          </div>
-
-          <div class="card-info">
-            <div class="card-info-data">
-              <p>$ 120</p>
-              <p>Bike</p>
-            </div>
-            <div class="card-info-img">
-              <figure>
-                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="card-product">
-            <img src="../productos/bike.jpeg" alt="producto" />
-          </div>
-
-          <div class="card-info">
-            <div class="card-info-data">
-              <p>$ 120</p>
-              <p>Bike</p>
-            </div>
-            <div class="card-info-img">
-              <figure>
-                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="card-product">
-            <img src="../productos/bike.jpeg" alt="producto" />
-          </div>
-
-          <div class="card-info">
-            <div class="card-info-data">
-              <p>$ 120</p>
-              <p>Bike</p>
-            </div>
-            <div class="card-info-img">
-              <figure>
-                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="card-product">
-            <img src="../productos/bike.jpeg" alt="producto" />
-          </div>
-
-          <div class="card-info">
-            <div class="card-info-data">
-              <p>$ 120</p>
-              <p>Bike</p>
-            </div>
-            <div class="card-info-img">
-              <figure>
-                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="card-product">
-            <img src="../productos/bike.jpeg" alt="producto" />
-          </div>
-
-          <div class="card-info">
-            <div class="card-info-data">
-              <p>$ 120</p>
-              <p>Bike</p>
-            </div>
-            <div class="card-info-img">
-              <figure>
-                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="card-product">
-            <img src="../productos/bike.jpeg" alt="producto" />
-          </div>
-
-          <div class="card-info">
-            <div class="card-info-data">
-              <p>$ 120</p>
-              <p>Bike</p>
-            </div>
-            <div class="card-info-img">
-              <figure>
-                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="card-product">
-            <img src="../productos/bike.jpeg" alt="producto" />
-          </div>
-
-          <div class="card-info">
-            <div class="card-info-data">
-              <p>$ 120</p>
-              <p>Bike</p>
-            </div>
-            <div class="card-info-img">
-              <figure>
-                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="card-product">
-            <img src="../productos/bike.jpeg" alt="producto" />
-          </div>
-
-          <div class="card-info">
-            <div class="card-info-data">
-              <p>$ 120</p>
-              <p>Bike</p>
-            </div>
-            <div class="card-info-img">
-              <figure>
-                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="card-product">
-            <img src="../productos/bike.jpeg" alt="producto" />
-          </div>
-
-          <div class="card-info">
-            <div class="card-info-data">
-              <p>$ 120</p>
-              <p>Bike</p>
-            </div>
-            <div class="card-info-img">
-              <figure>
-                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="card-product">
-            <img src="../productos/bike.jpeg" alt="producto" />
-          </div>
-
-          <div class="card-info">
-            <div class="card-info-data">
-              <p>$ 120</p>
-              <p>Bike</p>
-            </div>
-            <div class="card-info-img">
-              <figure>
-                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="card-product">
-            <img src="../productos/bike.jpeg" alt="producto" />
-          </div>
-
-          <div class="card-info">
-            <div class="card-info-data">
-              <p>$ 120</p>
-              <p>Bike</p>
-            </div>
-            <div class="card-info-img">
-              <figure>
-                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="card-product">
-            <img src="../productos/bike.jpeg" alt="producto" />
-          </div>
-
-          <div class="card-info">
-            <div class="card-info-data">
-              <p>$ 120</p>
-              <p>Bike</p>
-            </div>
-            <div class="card-info-img">
-              <figure>
-                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="card-product">
-            <img src="../productos/bike.jpeg" alt="producto" />
-          </div>
-
-          <div class="card-info">
-            <div class="card-info-data">
-              <p>$ 120</p>
-              <p>Bike</p>
-            </div>
-            <div class="card-info-img">
-              <figure>
-                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="card-product">
-            <img src="../productos/bike.jpeg" alt="producto" />
-          </div>
-
-          <div class="card-info">
-            <div class="card-info-data">
-              <p>$ 120</p>
-              <p>Bike</p>
-            </div>
-            <div class="card-info-img">
-              <figure>
-                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="card-product">
-            <img src="../productos/bike.jpeg" alt="producto" />
-          </div>
-
-          <div class="card-info">
-            <div class="card-info-data">
-              <p>$ 120</p>
-              <p>Bike</p>
-            </div>
-            <div class="card-info-img">
-              <figure>
-                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="card-product">
-            <img src="../productos/bike.jpeg" alt="producto" />
-          </div>
-
-          <div class="card-info">
-            <div class="card-info-data">
-              <p>$ 120</p>
-              <p>Bike</p>
-            </div>
-            <div class="card-info-img">
-              <figure>
-                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="card-product">
-            <img src="../productos/bike.jpeg" alt="producto" />
-          </div>
-
-          <div class="card-info">
-            <div class="card-info-data">
-              <p>$ 120</p>
-              <p>Bike</p>
-            </div>
-            <div class="card-info-img">
-              <figure>
-                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <div class="cards">
-          <div class="card-product">
-            <img src="../productos/bike.jpeg" alt="producto" />
-          </div>
-
-          <div class="card-info">
-            <div class="card-info-data">
-              <p>$ 120</p>
-              <p>Bike</p>
-            </div>
-            <div class="card-info-img">
-              <figure>
-                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        
-
+          <input
+            type="submit"
+            value="Create account"
+            class="secondary-button edit-button"
+          />
+        </form>
       </div>
-    </section>
+    </div>
   </body>
 </html>

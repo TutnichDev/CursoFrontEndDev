@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contraseña y Re-Enter</title>
+    <style>
+      :root {
+        --Very-light-pink: #c7c7c7;
+        --White: #ffffff;
+        --Text-input-field: #f7f7f7;
+        --Black: #000000;
+        --Hospital-green: #acd9b2;
+        --Dark: #232830;
+        --sm: 1.2rem;
+        --md: 1.6rem;
+        --lg: 1.8rem;
+      }
+
+      body {
+        margin: 0px;
+        font-family: "Quicksand", sans-serif;
+        width: 90vw;
+
+        display: contents;
+      }
+
+      .main-section {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .input-field-search {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 6px;
+        background: var(--Text-input-field) url(../icons/lupa.png) left
+          no-repeat;
+        border-radius: 8px;
+        border: none;
+        height: 30px;
+        background-size: 14px;
+        background-position-x: 10px;
+        padding-left: 28px;
+        color: var(--Text-input-field);
+      }
+
+      .cards-container {
+        margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 240px);
+        gap: 24px;
+        justify-content: center;
+        max-width: 90vw;
+      }
+
+      .cards {
+        width: 240px;
+      }
+
+      .card-product {
+        width: 240px;
+      }
+
+      .card-product img {
+        width: 240px;
+        height: 240px;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+
+      .card-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .card-info-data p:nth-child(1) {
+        font-weight: bold;
+        font-size: var(--md);
+
+        color: var(--Dark);
+        margin-bottom: 2px;
+        margin-top: 4px;
+      }
+
+      .card-info-data p:nth-child(2) {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: var(--md);
+        color: var(--Very-light-pink);
+      }
+      .card-info figure {
+        margin-right: 0;
+      }
+
+      @media (max-width: 640px) {
+        .cards-container {
+          grid-template-columns: repeat(auto-fill, 160px);
+        }
+
+        .cards {
+          width: 160px;
+        }
+
+        .card-product {
+          width: 160px;
+        }
+
+        .card-product img {
+          width: 160px;
+          height: 160px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="main-section">
+      <div class="cards-container">
+        <div class="cards">
+          <div class="card-product">
+            <img src="../productos/bike.jpeg" alt="producto" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-data">
+              <p>$ 120</p>
+              <p>Bike</p>
+            </div>
+            <div class="card-info-img">
+              <figure>
+                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card-product">
+            <img src="../productos/bike.jpeg" alt="producto" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-data">
+              <p>$ 120</p>
+              <p>Bike</p>
+            </div>
+            <div class="card-info-img">
+              <figure>
+                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card-product">
+            <img src="../productos/bike.jpeg" alt="producto" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-data">
+              <p>$ 120</p>
+              <p>Bike</p>
+            </div>
+            <div class="card-info-img">
+              <figure>
+                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card-product">
+            <img src="../productos/bike.jpeg" alt="producto" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-data">
+              <p>$ 120</p>
+              <p>Bike</p>
+            </div>
+            <div class="card-info-img">
+              <figure>
+                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card-product">
+            <img src="../productos/bike.jpeg" alt="producto" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-data">
+              <p>$ 120</p>
+              <p>Bike</p>
+            </div>
+            <div class="card-info-img">
+              <figure>
+                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card-product">
+            <img src="../productos/bike.jpeg" alt="producto" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-data">
+              <p>$ 120</p>
+              <p>Bike</p>
+            </div>
+            <div class="card-info-img">
+              <figure>
+                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card-product">
+            <img src="../productos/bike.jpeg" alt="producto" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-data">
+              <p>$ 120</p>
+              <p>Bike</p>
+            </div>
+            <div class="card-info-img">
+              <figure>
+                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card-product">
+            <img src="../productos/bike.jpeg" alt="producto" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-data">
+              <p>$ 120</p>
+              <p>Bike</p>
+            </div>
+            <div class="card-info-img">
+              <figure>
+                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card-product">
+            <img src="../productos/bike.jpeg" alt="producto" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-data">
+              <p>$ 120</p>
+              <p>Bike</p>
+            </div>
+            <div class="card-info-img">
+              <figure>
+                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card-product">
+            <img src="../productos/bike.jpeg" alt="producto" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-data">
+              <p>$ 120</p>
+              <p>Bike</p>
+            </div>
+            <div class="card-info-img">
+              <figure>
+                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card-product">
+            <img src="../productos/bike.jpeg" alt="producto" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-data">
+              <p>$ 120</p>
+              <p>Bike</p>
+            </div>
+            <div class="card-info-img">
+              <figure>
+                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card-product">
+            <img src="../productos/bike.jpeg" alt="producto" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-data">
+              <p>$ 120</p>
+              <p>Bike</p>
+            </div>
+            <div class="card-info-img">
+              <figure>
+                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card-product">
+            <img src="../productos/bike.jpeg" alt="producto" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-data">
+              <p>$ 120</p>
+              <p>Bike</p>
+            </div>
+            <div class="card-info-img">
+              <figure>
+                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card-product">
+            <img src="../productos/bike.jpeg" alt="producto" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-data">
+              <p>$ 120</p>
+              <p>Bike</p>
+            </div>
+            <div class="card-info-img">
+              <figure>
+                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card-product">
+            <img src="../productos/bike.jpeg" alt="producto" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-data">
+              <p>$ 120</p>
+              <p>Bike</p>
+            </div>
+            <div class="card-info-img">
+              <figure>
+                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card-product">
+            <img src="../productos/bike.jpeg" alt="producto" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-data">
+              <p>$ 120</p>
+              <p>Bike</p>
+            </div>
+            <div class="card-info-img">
+              <figure>
+                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card-product">
+            <img src="../productos/bike.jpeg" alt="producto" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-data">
+              <p>$ 120</p>
+              <p>Bike</p>
+            </div>
+            <div class="card-info-img">
+              <figure>
+                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card-product">
+            <img src="../productos/bike.jpeg" alt="producto" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-data">
+              <p>$ 120</p>
+              <p>Bike</p>
+            </div>
+            <div class="card-info-img">
+              <figure>
+                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card-product">
+            <img src="../productos/bike.jpeg" alt="producto" />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-data">
+              <p>$ 120</p>
+              <p>Bike</p>
+            </div>
+            <div class="card-info-img">
+              <figure>
+                <img src="../icons/bt_add_to_cart.svg" alt="carrito" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
