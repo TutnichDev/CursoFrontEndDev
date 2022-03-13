@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contraseña y Re-Enter</title>
+    <style>
+      :root {
+        --Very-light-pink: #c7c7c7;
+        --White: #ffffff;
+        --Text-input-field: #f7f7f7;
+        --Black: #000000;
+        --Hospital-green: #acd9b2;
+        --Dark: #232830;
+        --sm: 1.2rem;
+        --md: 1.6rem;
+        --lg: 1.8rem;
+      }
+      body {
+        margin: 0;
+
+        font-family: "Quicksand", sans-serif;
+      }
+
+      .desktop-menu {
+        padding: 10px;
+        
+        border-radius: 20px;
+        border: 1px solid var(--Very-light-pink);
+        width: 140px;
+        height: 200px;
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        
+      }
+      .desktop-menu ul{
+        
+        margin: 0px 0px 0px 0px ;
+        padding: 0px 0px 0px 0px;
+        display: grid;
+        width: 150px;
+        text-decoration: none;           
+        height: 200px;
+        list-style: none;
+        
+      }
+      .desktop-menu ul li{
+      
+        place-items: center;
+        margin-top: 25px;
+        text-align: right;
+        font-size: var(--md);
+        font-weight: bold;
+        padding: 0px 10px 0px 0px;
+      }
+
+      .desktop-menu ul li a {
+        
+        color: var(--Dark);
+      }
+
+      .desktop-menu ul li:last-child {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid var(--Hospital-green);
+      }
+
+
+
+
+      .desktop-menu ul li:last-child a {
+        
+        color: var(--Hospital-green);
+        
+      }
+      
+      .desktop-menu ul li a {
+        text-decoration: none;           
+      }
+
+      @media (max-width: 640px) {
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <div class="desktop-menu">
+        <ul>
+          <li> <a href=""> My order </a> </li>
+          <li> <a href=""> My account </a> </li>
+          <li> <a href=""> Sing out </a> </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

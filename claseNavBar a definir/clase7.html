@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contraseña y Re-Enter</title>
+    <style>
+      :root {
+        --Very-light-pink: #c7c7c7;
+        --White: #ffffff;
+        --Text-input-field: #f7f7f7;
+        --Black: #000000;
+        --Hospital-green: #acd9b2;
+        --Dark: #232830;
+        --sm: 1.2rem;
+        --md: 1.6rem;
+        --lg: 1.8rem;
+      }
+      body {
+        margin: 0;
+
+        font-family: "Quicksand", sans-serif;
+      }
+      .navbar {
+        width: 100vw;
+        height: 56px;
+        box-shadow: 1px 1px 3px 1px var(--Very-light-pink);
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+      }
+
+      .nav-first {
+        display: flex;
+        grid-column: 1/08;
+        align-items: center;
+        width: 100%;
+        height: 56px;
+      }
+
+      .nav-first_brand {
+        margin-left: 32px;
+      }
+
+      .nav-first_brand img {
+        width: 140px;
+      }
+      .nav-first_filters {
+        width: 400px;
+        margin-left: 40px;
+      }
+
+      .nav-first_filters figure {
+        display: none;
+      } 
+
+      .nav-first_filters ul {
+        padding: 0px;
+        display: flex;
+        width: inherit;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-first_filters ul li {
+        list-style-type: none;
+        list-style-position: horizontal;
+        display: inline;
+        font-size: var(--md);
+        color: var(--Very-light-pink);
+        text-align: center;
+      }
+
+      .nav-first_filters ul li:nth-child(1) {
+        color: var(--Hospital-green);
+        border: 1px solid var(--Hospital-green);
+        border-radius: 10px;
+        padding: 4px 12px;
+      }
+      .nav-second {
+        display: flex;
+        grid-column: 11/17;
+        align-items: center;
+        height: 56px;
+
+        width: 100%;
+        justify-content: flex-end;
+      }
+
+      .nav-second_account {
+        font-size: var(--md);
+        color: var(--Dark);
+      }
+      .nav-second_shop {
+        margin: 0px 40px 0px 40px;
+      }
+
+      @media (max-width: 1000px) {
+        .nav-first_filters {
+          margin: 0;
+        }
+        
+        .nav-first_filters ul{
+          display: none;
+        }  
+
+        .nav-first_filters figure {
+        display:block;
+      } 
+      }
+
+      @media (max-width: 640px) {
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-first">
+        <div class="nav-first_brand">
+          <img src="../logos/logo_yard_sale.svg" alt="" />
+        </div>
+        <div class="nav-first_filters">
+          <figure>
+            <img src="../icons/icon_menu.svg" alt="">
+          </figure>
+          <ul>
+            <li>All</li>
+            <li>Clothes</li>
+            <li>Electronics</li>
+            <li>Furniture</li>
+            <li>Toys</li>
+            <li>Others</li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-second">
+        <div class="nav-second_account">matias.ballestrero@gmail.com</div>
+        <div class="nav-second_shop">
+          <img src="../icons/icon_shopping_cart_notification.svg" alt="" />
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
