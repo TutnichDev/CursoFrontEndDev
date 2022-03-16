@@ -59,7 +59,7 @@
 
       .nav-first_filters figure {
         display: none;
-      } 
+      }
 
       .nav-first_filters ul {
         padding: 0px;
@@ -76,9 +76,10 @@
         font-size: var(--md);
         color: var(--Very-light-pink);
         text-align: center;
+        padding: 4px 16px;
       }
 
-      .nav-first_filters ul li:nth-child(1) {
+      .nav-first_filters ul li:hover {
         color: var(--Hospital-green);
         border: 1px solid var(--Hospital-green);
         border-radius: 10px;
@@ -102,21 +103,64 @@
         margin: 0px 40px 0px 40px;
       }
 
-      @media (max-width: 1000px) {
+      .nav-second_shop .quantity-indicator {
+        position: absolute;
+        top: 1px;
+        right: 44px;
+        font-weight: bold;
+      }
+      .brand_mobile {
+        display: none;
+      }
+
+      @media (max-width: 1110px) {
+        .nav-first_filters_mobile {
+          display: none;
+        }
         .nav-first_filters {
           margin: 0;
         }
-        
-        .nav-first_filters ul{
+
+        .nav-first_filters ul {
           display: none;
-        }  
+        }
 
         .nav-first_filters figure {
-        display:block;
-      } 
+          display: block;
+        }
       }
 
-      @media (max-width: 640px) {
+      @media (max-width: 610px) {
+        .nav-first_filters_desktop {
+          display: none;
+        }
+        .nav-first_filters_mobile {
+          display: block;
+          width: auto;
+        }
+
+        .brand_mobile {
+          grid-column: 4/14;
+          display: flex;
+          place-content: center;
+          margin: 0;
+        }
+        .nav-first {
+          grid-column: 1/4;
+          justify-content: space-between;
+        }
+
+        .nav-second {
+          grid-column: 14/17;
+        }
+
+        .nav-second_account {
+          display: none;
+        }
+
+        .brand_desktop {
+          display: none;
+        }
       }
     </style>
   </head>
@@ -124,12 +168,17 @@
   <body>
     <nav class="navbar">
       <div class="nav-first">
-        <div class="nav-first_brand">
+        <div class="nav-first_filters nav-first_filters_mobile">
+          <figure>
+            <img src="../icons/icon_menu.svg" alt="" />
+          </figure>
+        </div>
+        <div class="nav-first_brand brand_desktop">
           <img src="../logos/logo_yard_sale.svg" alt="" />
         </div>
-        <div class="nav-first_filters">
+        <div class="nav-first_filters nav-first_filters_desktop">
           <figure>
-            <img src="../icons/icon_menu.svg" alt="">
+            <img src="../icons/icon_menu.svg" alt="" />
           </figure>
           <ul>
             <li>All</li>
@@ -141,10 +190,16 @@
           </ul>
         </div>
       </div>
+
+      <div class="nav-first_brand brand_mobile">
+        <img src="../logos/logo_yard_sale.svg" alt="" />
+      </div>
+
       <div class="nav-second">
         <div class="nav-second_account">matias.ballestrero@gmail.com</div>
         <div class="nav-second_shop">
           <img src="../icons/icon_shopping_cart_notification.svg" alt="" />
+          <p class="quantity-indicator">2</p>
         </div>
       </div>
     </nav>
