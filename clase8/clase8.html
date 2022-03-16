@@ -26,23 +26,19 @@
       }
       body {
         margin: 0;
-        height: 100vh;
         font-family: "Quicksand", sans-serif;
       }
 
-      .desktop-menu {
-        padding: 10px;
-        
-        border-radius: 20px;
-        border: 1px solid var(--Very-light-pink);
-        width: 100%;
-        height: 100%;
+      .mobile-menu {
+        padding: 0px;
+        height: auto;
+        height: 100vh;
         display: block;
         place-items: center;
         justify-content: center;
       }
 
-      .desktop-menu ul{
+      .mobile-menu ul {
         font-weight: bold;
         padding: 0px 0px 0px 30px;
         width: 100%;
@@ -51,38 +47,34 @@
         flex-direction: column;
         height: 80%;
         list-style: none; */
-        
       }
 
-      
-      
-      .desktop-menu .account {
-        margin: 60px 0px 0px 0px;
-        
-
+      .mobile-menu .account {
+        margin: 30px 30px 0px 30px;
+        border-top: 1px solid var(--Hospital-green);
+        width: auto;
+        padding: 0;
       }
 
-      .desktop-menu .personal-data {
+      .mobile-menu .personal-data {
         font-size: var(--sm);
-        
         text-decoration: none;
-        
-        margin: 100px 0px 0px 30px;
+        position: absolute;
+        bottom: 0;
+        margin: 0px 0px 28px 30px;
       }
 
-      .desktop-menu .personal-data p {
+      .mobile-menu .personal-data p {
         color: var(--Very-light-pink);
         text-decoration: none;
         font-weight: bold;
       }
 
-      .desktop-menu .personal-data a {
+      .mobile-menu .personal-data a {
         color: var(--Hospital-green);
         text-decoration: none;
       }
-      .desktop-menu ul li{
-        
-        
+      .mobile-menu ul li {
         list-style: none;
         place-items: center;
         margin-top: 25px;
@@ -91,17 +83,13 @@
         font-weight: bold;
         padding: 0px 10px 0px 0px;
         margin-top: 30px;
-        
       }
-      .desktop-menu ul li a{
-        
+      .mobile-menu ul li a {
         color: var(--Black);
         text-decoration: none;
         font-size: var(--md);
         font-weight: bold;
-        
       }
-
 
       @media (max-width: 640px) {
       }
@@ -109,28 +97,25 @@
   </head>
 
   <body>
-    
-      <div class="desktop-menu">
-        <ul class="elements">
-          <li> <a href=""> CATEGORIES </a> </li>
-          <li> <a href=""> All </a> </li>
-          <li> <a href=""> Clothes </a> </li>
-          <li> <a href=""> Electronics </a> </li>
-          <li> <a href=""> Furnitures </a> </li>
-          <li> <a href=""> Toys </a> </li>
-          <li> <a href=""> Others </a> </li>
-        </ul>
+    <div class="mobile-menu">
+      <ul class="elements">
+        <li><a href=""> CATEGORIES </a></li>
+        <li><a href=""> All </a></li>
+        <li><a href=""> Clothes </a></li>
+        <li><a href=""> Electronics </a></li>
+        <li><a href=""> Furnitures </a></li>
+        <li><a href=""> Toys </a></li>
+        <li><a href=""> Others </a></li>
+      </ul>
 
-        <ul class="account">
-          <li> <a href=""> My orders </a> </li>
-          <li> <a href=""> My account </a> </li>
-        </ul>
-        <div class="personal-data">
-          <p>camilayokoo@gmail.com</p>
-          <a href=""> Sign out </a>
-        </div>
-
+      <ul class="account">
+        <li><a href=""> My orders </a></li>
+        <li><a href=""> My account </a></li>
+      </ul>
+      <div class="personal-data">
+        <p>camilayokoo@gmail.com</p>
+        <a href=""> Sign out </a>
       </div>
-    
+    </div>
   </body>
 </html>
