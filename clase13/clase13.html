@@ -38,6 +38,20 @@
         justify-content: space-between;
       }
 
+      .main-container .title {
+        display: flex;
+        margin: 20px 0 0 20px;
+      }
+
+      .main-container .title span {
+        margin: 0 0 0 8px;
+        font-weight: bold;
+        font-size: var(--md);
+      }
+      .main-container .title img {
+        transform: rotate(180deg);
+      }
+
       .main-container .cards-container {
         margin: 30px 20px;
       }
@@ -76,10 +90,7 @@
         height: 16px;
       }
 
-      .main-container .totalizer  {
-        
-        
-        
+      .main-container .totalizer {
         display: flex;
         margin: 0 0 15px 0;
         height: 50px;
@@ -129,11 +140,23 @@
         border-radius: 8px;
         margin: 0 0 20px 0;
       }
+
+      @media (min-width: 450px) {
+        .main-container {
+          position: absolute;
+          right: 0;
+          width: 450px;
+        }
+      }
     </style>
   </head>
 
   <body>
     <div class="main-container">
+      <div class="title">
+        <img src="../icons/flechita.svg" alt="" />
+        <span>My orders</span>
+      </div>
       <div class="cards-container">
         <div class="cards">
           <div>
