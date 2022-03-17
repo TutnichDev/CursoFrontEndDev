@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+
+    <style>
+      :root {
+        --Very-light-pink: #c7c7c7;
+        --White: #ffffff;
+        --Text-input-field: #f7f7f7;
+        --Black: #000000;
+        --Hospital-green: #acd9b2;
+        --Dark: #232830;
+        --sm: 1.2rem;
+        --md: 1.6rem;
+        --lg: 1.8rem;
+      }
+      body {
+        margin: 0;
+        font-family: "Quicksand", sans-serif;
+        
+      }
+
+      .main-container {
+        width: 100%;
+        max-width: 360px;
+        border: 1px solid var(--Dark);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .img-close {
+        cursor: pointer;
+        width: 05px;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        border-radius: 50%;
+        width: 20px;
+        background-color: var(--White);
+      }
+      .img-prod {
+        width: 100%;
+        height: 400px;
+        border-radius: 0 0 16px 16px;
+      }
+
+      .img-selector{
+        
+        display: flex;
+        place-content: center;
+        width: fit-content;
+        place-self: center;
+      }
+
+      .img-selector div{ 
+        margin: 4px 4px 0 4px;
+        width: 8px;
+        height: 8px;
+        border: 1px solid var(--Very-light-pink);
+        border-radius: 50%;
+        background-color: var(--Very-light-pink);
+        cursor: pointer;
+      }
+
+      .product-data {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 12px;
+      }
+
+      .product-data span:nth-child(1) {
+        color: var(--Dark);
+        font-weight: bold;
+        font-size: var(--md);
+      }
+      .product-data span:nth-child(2) {
+        color: var(--Very-light-pink);
+        font-size: var(--md);
+        margin-top: 4px;
+      }
+
+      .product-description {
+        
+        padding: 0 0 0 12px;
+        color: var(--Very-light-pink);
+        font-size: var(--sm);
+        margin-top: 4px;
+      }
+
+      .button-container {
+        display: flex;
+        place-content: center;
+      }
+      
+      .button-container button {
+        width: 100%;
+        height: 40px;
+        border-radius: 8px;
+        margin: 0  12px 12px  12px;
+        padding: 0%;
+        background-color: var(--Hospital-green);
+        color: var(--Text-input-field);
+        border: none;
+        display: flex;
+        place-content: center;
+        align-items: center;
+        cursor: pointer;
+        
+      }
+
+      .button-container button span{
+        margin: 0 0 0 4px;
+        
+      }
+
+      @media (max-width: 640px) {
+        .main-container {
+        width: 100%;
+        min-width: 300px;
+        max-width: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <aside class="main-container">
+      <img src="../icons/icon_close.png" class="img-close" alt="">
+      <img class="img-prod" src="../productos/bike.jpeg" alt="" />
+      <div class="img-selector">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <p class="product-data">
+        <span>$120,00</span>
+        <span>Retro Refrigerador</span>
+      </p>
+
+      <p class="product-description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+        voluptatem quisquam consequatur ducimus iure minus doloribus! Fugiat
+        quia, architecto tempora dolorum sit, voluptatem, rem quod recusandae
+        corrupti ipsam culpa doloremque?
+      </p>
+      <div class="button-container">
+        <button  type="button" name="" id="" value="    Add to cart" > 
+          <img src="../icons/bt_add_to_cart.svg" alt="">
+          <span>
+          Add to cart
+        </span>
+        </button>
+      </div>
+    </aside>
+  </body>
+</html>
