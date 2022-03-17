@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+
+    <style>
+      :root {
+        --Very-light-pink: #c7c7c7;
+        --White: #ffffff;
+        --Text-input-field: #f7f7f7;
+        --Black: #000000;
+        --Hospital-green: #acd9b2;
+        --Dark: #232830;
+        --sm: 1.2rem;
+        --md: 1.6rem;
+        --lg: 1.8rem;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .main-container .cards-container {
+        margin: 30px 20px;
+      }
+
+      .main-container .cards-container div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .main-container .cards-container img {
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+      }
+
+      .main-container .cards-container div div p {
+        margin: 0 0 0 15px;
+        color: var(--Very-light-pink);
+        font-size: var(--sm);
+      }
+
+      .main-container .cards-container .cards-2nd-half p {
+        color: var(--Dark);
+        font-weight: bold;
+        font-size: var(--sm);
+        margin: 0 8px 0 0;
+      }
+
+      .main-container .cards-container .cards {
+        margin-bottom: 20px;
+      }
+
+      .main-container .cards-container .cards .cards_close {
+        width: 16px;
+        height: 16px;
+      }
+
+      .main-container .totalizer  {
+        
+        
+        
+        display: flex;
+        margin: 0 0 15px 0;
+        height: 50px;
+        padding: 0 20px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .main-container .totalizer div {
+        width: 100%;
+        background-color: var(--Text-input-field);
+        border-radius: 8px;
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+      }
+
+      .main-container .totalizer div span {
+        align-self: center;
+        color: var(--Dark);
+        font-size: var(--md);
+        font-weight: bold;
+        margin: 0 12px 0 0;
+      }
+
+      .main-container .totalizer div h1 {
+        align-self: center;
+        color: var(--Dark);
+        font-size: var(--md);
+        font-weight: bold;
+        margin: 0 0 0 12px;
+      }
+
+      .main-container .primary-button {
+        display: flex;
+        justify-content: center;
+        padding: 0 20px;
+      }
+
+      .primary-button button {
+        background-color: var(--Hospital-green);
+        color: var(--Text-input-field);
+        border: none;
+        width: 100%;
+        height: 45px;
+        border-radius: 8px;
+        margin: 0 0 20px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="cards-container">
+        <div class="cards">
+          <div>
+            <img src="../productos/bike.jpeg" alt="" />
+            <p>Round Shelf</p>
+          </div>
+          <div class="cards-2nd-half">
+            <p>$ 120,00</p>
+            <img class="cards_close" src="../icons/icon_close.png" alt="" />
+          </div>
+        </div>
+
+        <div class="cards">
+          <div>
+            <img src="../productos/bike.jpeg" alt="" />
+            <p>Round Shelf</p>
+          </div>
+          <div class="cards-2nd-half">
+            <p>$ 120,00</p>
+            <img class="cards_close" src="../icons/icon_close.png" alt="" />
+          </div>
+        </div>
+
+        <div class="cards">
+          <div>
+            <img src="../productos/bike.jpeg" alt="" />
+            <p>Round Shelf</p>
+          </div>
+          <div class="cards-2nd-half">
+            <p>$ 120,00</p>
+            <img class="cards_close" src="../icons/icon_close.png" alt="" />
+          </div>
+        </div>
+
+        <div class="cards">
+          <div>
+            <img src="../productos/bike.jpeg" alt="" />
+            <p>Round Shelf</p>
+          </div>
+          <div class="cards-2nd-half">
+            <p>$ 120,00</p>
+            <img class="cards_close" src="../icons/icon_close.png" alt="" />
+          </div>
+        </div>
+
+        <div class="cards">
+          <div>
+            <img src="../productos/bike.jpeg" alt="" />
+            <p>Round Shelf</p>
+          </div>
+          <div class="cards-2nd-half">
+            <p>$ 120,00</p>
+            <img class="cards_close" src="../icons/icon_close.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="totalizer">
+        <div>
+          <h1>Total</h1>
+          <span>$560.00</span>
+        </div>
+      </div>
+
+      <div class="primary-button">
+        <button type="submit">Checkout</button>
+      </div>
+    </div>
+  </body>
+</html>
